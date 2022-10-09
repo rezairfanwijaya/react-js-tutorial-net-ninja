@@ -4,7 +4,7 @@ function App() {
   const title = 'My First Blog'
   const likes = 230
   const scores = [90,80,78,65,99]
-  const person = {name:'reza', level:12}
+  // const person = {name:'reza', level:12}
   return (
     <div className="App">
       <div className="content">
