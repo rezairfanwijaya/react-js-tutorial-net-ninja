@@ -29,6 +29,12 @@
 .navbar a:hover {
   color: #f1356d;
 }
+.navbar .create-blog{
+  background-color: #f1356d;
+}
+.navbar .create-blog:hover{
+  background-color: #e82f66;
+}
 .content {
   max-width: 600px;
   margin: 40px auto;

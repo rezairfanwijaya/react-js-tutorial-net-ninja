@@ -7,7 +7,10 @@ const Navbar = () => {
 
             <div className="right-side">
                 <a href="/">Home</a>
-                <a href="/create">Add Blog</a>
+                <a href="/create" style={{
+                    color : "white",
+                    borderRadius : "6px"
+                }} className="create-blog">Add Blog</a>
             </div>
         </nav>
      );
