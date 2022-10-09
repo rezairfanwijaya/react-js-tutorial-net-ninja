@@ -40,3 +40,15 @@
   margin: 40px auto;
   padding: 20px;
 }
+
+/* blog preview style */
+.blog-preview {
+  padding: 20px;
+}
+.blog-preview:hover {
+  padding: 20px;
+  background-color: #f7e7ec;
+}
+.blog-preview h2{
+  color: #f1356d;
+}
