@@ -49,6 +49,10 @@
   padding: 20px;
   background-color: #f7e7ec;
 }
-.blog-preview h2{
+.blog-preview h3{
   color: #f1356d;
+}
+.title-section-blog{
+  color: #f1356d;
+  margin-bottom: 20px;
 }
