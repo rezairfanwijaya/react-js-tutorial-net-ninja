@@ -1,0 +1,17 @@
+{
+    "blogs" : [
+        {
+            "id" : 1,
+            "title" : "Blog Pertama Saya",
+            "body" : "Hallo ini blog pertama saya",
+            "author" : "Reza Irfan Wijaya"
+        },
+        {
+            "id" : 2,
+            "title" : "Blog Kedua Saya",
+            "body" : "Hallo ini blog kedua saya",
+            "author" : "Reza Abdas"
+        }
+    ]
+
+}

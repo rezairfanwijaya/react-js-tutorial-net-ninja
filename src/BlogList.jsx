@@ -1,27 +1,16 @@
-const BlogList = ({ blogs, titleSection, deleteBlog }) => {
+const BlogList = ({ dataBlogs, titleHeader }) => {
     return (
         <>
-            {/* foreach nya jsx */}
-            <h2 className="title-section-blog">
-                {titleSection}
-            </h2>
-
-            {blogs.map((blog) => (
-                <div className="blog-preview" id={blog.id}
-                    key={blog.id}>
-                    <h3>{blog.title}</h3>
-                    <p>{blog.body}</p>
-                    <p>oleh : {blog.author}</p>
-                    <button
-                        onClick={() => deleteBlog(blog.id)}
-                        id = "delete-blog"
-                    >
-                        Delete blog
-                    </button>
+            <h2 className="title-section-blog">{titleHeader}</h2>
+            {dataBlogs.map((blog)=>(
+                <div className="blog-preview" id={ blog.id }>
+                    <h3>{ blog.title }</h3>
+                    <p>{ blog.body }</p>
+                    <p>oleh : { blog.author }</p>
                 </div>
             ))}
         </>
-    );
+    )
 }
 
-export default BlogList;
+export default BlogList
