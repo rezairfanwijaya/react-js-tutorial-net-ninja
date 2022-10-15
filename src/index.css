@@ -6,6 +6,11 @@
   font-family: "Quicksand";
   color: #333;
 }
+
+body {
+  background-color: #333;
+}
+
 .navbar {
   padding: 20px;
   display: flex;
@@ -15,28 +20,55 @@
   border-bottom: 1px solid #f2f2f2;
   justify-content: space-between;
 }
+
 .navbar h1 {
   color: #f1356d;
 }
+
 .navbar .links {
   margin-left: auto;
 }
+
 .navbar a {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
 }
+
 .navbar a:hover {
   color: #f1356d;
 }
-.navbar .create-blog{
+
+.navbar .create-blog {
   background-color: #f1356d;
 }
-.navbar .create-blog:hover{
+
+.navbar .create-blog:hover {
   background-color: #e82f66;
 }
+
 .content {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
+}
+
+/* comment */
+h2.comment-heading {
+  color: #f1356d;
+  margin-bottom: 32px;
+}
+.comment-preview{
+  padding: 20px 15px;
+  margin: 40px 0;
+}
+.comment-preview:hover{
+  background-color: #242424;
+}
+.comment-preview h2{
+  color: #f1356d;
+}
+.comment-preview p{
+  color: #fff;
+  margin: 10px 0;
 }

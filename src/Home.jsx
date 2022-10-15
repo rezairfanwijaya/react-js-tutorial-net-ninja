@@ -1,9 +1,23 @@
+import { useState, useEffect } from "react";
+import CommentList from "./CommentList";
+
 const Home = () => {
-    return ( 
+    const [comments, setComments] = useState(null)
+
+    useEffect(() => {
+        fetch('http://localhost:8080/data')
+            .then(res => { return res.json() })
+            .then(data => setComments(data))
+    }, [])
+
+    return (
         <div className="home">
-            <h1>Homepage</h1>
+            {comments && <CommentList
+                commentDatas={comments}
+                titleSection="All Comments"
+            />}
         </div>
-     );
+    );
 }
- 
+
 export default Home;
