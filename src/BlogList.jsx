@@ -1,4 +1,4 @@
-const BlogList = ({ blogs, titleSection }) => {
+const BlogList = ({ blogs, titleSection, deleteBlog }) => {
     return (
         <>
             {/* foreach nya jsx */}
@@ -7,11 +7,15 @@ const BlogList = ({ blogs, titleSection }) => {
             </h2>
 
             {blogs.map((blog) => (
-                <div className="blog-preview" id={blogs.id}
-                    key={blogs.id}>
+                <div className="blog-preview" id={blog.id}
+                    key={blog.id}>
                     <h3>{blog.title}</h3>
                     <p>{blog.body}</p>
                     <p>oleh : {blog.author}</p>
+                    <button
+                        onClick={()=>deleteBlog(blog.id)}>
+                        Delete blog
+                    </button>
                 </div>
             ))}
         </>

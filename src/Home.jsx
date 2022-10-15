@@ -29,18 +29,17 @@ const Home = () => {
         },
     ]);
 
-    let inputUser = "wijaya"
-    let title = `${inputUser} Blog`
+    const deleteBlogById = (id) => {
+        const newBlogs = blogs.filter(blog=>blog.id !== id)
+        setBlogs(newBlogs)
+    }
 
     return (
         <div className="home">
             {/* props */}
-            <BlogList blogs={blogs} titleSection='All Blog' />
-            {/* akan memfilter hanya blog dengan author 
-            wijaya saja yang akan di tampilkan */}
             <BlogList 
-            blogs={blogs.filter((blog)=>blog.author===inputUser)} 
-            titleSection={title}/>
+            blogs={blogs} titleSection='All Blog' 
+            deleteBlog = {deleteBlogById}/>
         </div>
     );
 }
