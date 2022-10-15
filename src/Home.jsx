@@ -21,12 +21,26 @@ const Home = () => {
             author: 'wijaya',
             id: 3
         },
+        {
+            title: 'blog empat',
+            body: 'ini merupakan blog empat saya',
+            author: 'wijaya',
+            id: 4
+        },
     ]);
+
+    let inputUser = "wijaya"
+    let title = `${inputUser} Blog`
 
     return (
         <div className="home">
             {/* props */}
             <BlogList blogs={blogs} titleSection='All Blog' />
+            {/* akan memfilter hanya blog dengan author 
+            wijaya saja yang akan di tampilkan */}
+            <BlogList 
+            blogs={blogs.filter((blog)=>blog.author===inputUser)} 
+            titleSection={title}/>
         </div>
     );
 }

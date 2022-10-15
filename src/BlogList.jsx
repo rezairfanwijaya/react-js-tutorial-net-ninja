@@ -11,7 +11,7 @@ const BlogList = ({ blogs, titleSection }) => {
                     key={blogs.id}>
                     <h3>{blog.title}</h3>
                     <p>{blog.body}</p>
-                    <p>{blog.author}</p>
+                    <p>oleh : {blog.author}</p>
                 </div>
             ))}
         </>
