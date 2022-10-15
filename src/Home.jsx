@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BlogList from "./BlogList";
 
 const Home = () => {
@@ -29,12 +29,27 @@ const Home = () => {
         },
     ]);
 
+    const [isUseEffect, setIsUseEffect] = useState(false)
+
     // function ini menerima id blog dari child component
     // yaitu di file BlogList.jsx
     const deleteBlogById = (id) => {
-        const newBlogs = blogs.filter(blog=>blog.id !== id)
+        const newBlogs = blogs.filter(blog => blog.id !== id)
         setBlogs(newBlogs)
     }
+
+    // useeffect dependency
+    // pada dasarnya function yang berada di dalam useeffect
+    // akan dirun secara otomatis ketika component nya dirender
+    // tapi ketika kita menggunakan useeffect dependency
+    // kita bisa hanya menjalankan useEffect ketika pertama kali
+    // component di render saja, tidak setiap kali state nya update
+    // dan memilih ketika state apa yang berubah kita akan 
+    // mentrigger usereffect
+    useEffect(() => {
+        console.log("Hallo")
+        console.log(isUseEffect)
+    }, [isUseEffect]) // isUseEffect merupakan state trigger 
 
     return (
         <div className="home">
@@ -43,9 +58,12 @@ const Home = () => {
             si child component (BlogList.jsx) untuk
             mengirim id ke parent
             component (Home.jsx) untuk dihapus */}
-            <BlogList 
-            blogs={blogs} titleSection='All Blog' 
-            deleteBlog = {deleteBlogById} />
+            <BlogList
+                blogs={blogs} titleSection='All Blog'
+                deleteBlog={deleteBlogById}
+            />
+
+            <button onClick={() => setIsUseEffect(true)}>run use Effect</button>
         </div>
     );
 }
