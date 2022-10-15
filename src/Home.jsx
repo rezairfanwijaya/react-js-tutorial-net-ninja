@@ -29,6 +29,8 @@ const Home = () => {
         },
     ]);
 
+    // function ini menerima id blog dari child component
+    // yaitu di file BlogList.jsx
     const deleteBlogById = (id) => {
         const newBlogs = blogs.filter(blog=>blog.id !== id)
         setBlogs(newBlogs)
@@ -37,9 +39,13 @@ const Home = () => {
     return (
         <div className="home">
             {/* props */}
+            {/* deleteBlog akan menjadi perantara
+            si child component (BlogList.jsx) untuk
+            mengirim id ke parent
+            component (Home.jsx) untuk dihapus */}
             <BlogList 
             blogs={blogs} titleSection='All Blog' 
-            deleteBlog = {deleteBlogById}/>
+            deleteBlog = {deleteBlogById} />
         </div>
     );
 }

@@ -56,3 +56,14 @@
   color: #f1356d;
   margin-bottom: 20px;
 }
+#delete-blog{
+  margin: 20px 0;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  color: #333;
+}
+#delete-blog:hover{
+  background-color:#f1356d;
+  color: #fff;
+}
