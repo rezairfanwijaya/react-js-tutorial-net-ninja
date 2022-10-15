@@ -67,3 +67,9 @@
   background-color:#f1356d;
   color: #fff;
 }
+
+/* loading */
+.home .loading{
+  text-align: center;
+  font-size: 50px;
+}
