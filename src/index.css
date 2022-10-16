@@ -78,3 +78,28 @@ h2.comment-heading {
   text-align: center;
   font-size: xx-large;
 }
+.tag {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.tag .commentar{
+  color: #fff;
+  text-decoration: none;
+  background-color: #333;
+  padding: 15px 20px;
+}
+.tag .commentar:hover{
+  background-color: rgb(38, 38, 38);
+  border-radius: 20px;
+}
+.tag .user{
+  color: #fff;
+  text-decoration: none;
+  background-color: #333;
+  padding: 15px 20px;
+}
+.tag .user:hover{
+  background-color: rgb(38, 38, 38);
+  border-radius: 20px;
+}
