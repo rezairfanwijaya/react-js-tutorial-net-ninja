@@ -21,7 +21,7 @@ const GetData = (url) => {
                 .catch(e => { setErrorMessage(e.message) })
         ), 3000)
     }, [url]); // url akan menjadi trigger untuk useeffect berjalan, jadi ketika ada url yang berubah
-    // maka useeffect akan reload dan fetch url terbaru
+    // maka useeffect akan reload otomatis dan fetch url terbaru
 
     return { Data, ErrorMessage, IsLoading }
 }
