@@ -1,21 +1,16 @@
 import { useState, useEffect } from "react";
+import GetData from "./api/GetData";
 import CommentList from "./CommentList";
 
 const Home = () => {
-    const [comments, setComments] = useState(null)
 
-    useEffect(() => {
-        fetch('http://localhost:8080/data')
-            .then(res => { return res.json() })
-            .then(data => setComments(data))
-    }, [])
+    const {Data, ErrorMessage, IsLoading} = GetData('http://localhost:8080/data')
 
     return (
         <div className="home">
-            {comments && <CommentList
-                commentDatas={comments}
-                titleSection="All Comments"
-            />}
+          {IsLoading && <div className="loading">Loading....</div>}
+          {ErrorMessage && <div className="loading">{ ErrorMessage }</div>}
+          {Data && <CommentList commentDatas={Data} titleSection="All Comments"/>}
         </div>
     );
 }
