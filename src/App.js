@@ -20,7 +20,7 @@ function App() {
             </Route>
 
             {/* untuk route yang ada params nya penulisan nya seperti ini */}
-            <Route path="/blog/:title" component={BlogDetail} />
+            <Route path="/blog/:id" component={BlogDetail} />
 
           </Switch>
         </div>
