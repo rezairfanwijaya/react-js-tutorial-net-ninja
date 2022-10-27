@@ -14,7 +14,7 @@ const BlogDetail = (props) => {
                 <div className="blog-detail">
                     <h1>{Data.title}</h1>
                     <p>oleh : {Data.author}</p>
-                    <p style={{ marginTop:"20px" }}>{Data.content}</p>
+                    <p style={{ marginTop:"20px" }}>{Data.body}</p>
                 </div>
             )}
         </div>
