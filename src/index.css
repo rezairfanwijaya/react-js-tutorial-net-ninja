@@ -103,3 +103,6 @@ h2.comment-heading {
   background-color: rgb(38, 38, 38);
   border-radius: 20px;
 }
+.comment-preview .link{
+  color: #fff;
+}

@@ -3,6 +3,7 @@ import Home from './Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import CommentList from './CommentList';
 import UserList from './UserList';
+import UserDetail from './UserDetail';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
             <Route path="/user">
               <UserList />
             </Route>
+
+            <Route path="/user/detail/:id" component={UserDetail}/>
 
           </Switch>
         </div>

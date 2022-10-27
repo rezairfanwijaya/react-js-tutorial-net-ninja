@@ -1,9 +1,9 @@
 import GetData from "./api/GetData";
 import Tags from "./Tags";
+import { Link } from "react-router-dom";
 
 const UserList = () => {
     const { Data, ErrorMessage, IsLoading } = GetData('http://localhost:8080/users')
-    console.log(Data)
     return (
         <>
             <Tags />
@@ -14,6 +14,11 @@ const UserList = () => {
                     <div className="comment-preview" key={user.id}>
                         <h2 className="comment-heading">{user.name}</h2>
                         <p>email : {user.email}</p>
+                        <Link to={`/user/detail/${user.id}`}>
+                            <div className="link">
+                                Detail
+                            </div>
+                        </Link>
                     </div>
                 ))}
             </div>
