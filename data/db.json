@@ -1959,5 +1959,28 @@
                 "bs": "target end-to-end models"
             }
         }
+    ],
+    "blogs" : [
+        {
+            "id" : 1,
+            "title" : "Blog Pertama Saya",
+            "preview" : "pada kali ini saya akan ...",
+            "body" : "Hallo selamat datang di blog saya",
+            "author" : "Reza Irfan Wijaya"
+        },
+        {
+            "id" : 2,
+            "title" : "Blog Kedua Saya",
+            "preview" : "pada kali ini saya akan ...",
+            "body" : "Hallo selamat datang di blog saya",
+            "author" : "Reza Irfan"
+        },
+        {
+            "id" : 3,
+            "title" : "Blog Ketiga Saya",
+            "preview" : "pada kali ini saya akan ...",
+            "body" : "Hallo selamat datang di blog saya",
+            "author" : "Reza"
+        }
     ]
 }
