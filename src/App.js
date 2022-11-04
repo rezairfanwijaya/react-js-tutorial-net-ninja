@@ -6,6 +6,7 @@ import UserList from './UserList';
 import UserDetail from './UserDetail';
 import BlogList from './BlogList';
 import BlogDetail from './BlogDetail';
+import CreateBlog from './CreateBlog';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             </Route>
 
             <Route path={"/blog/:id"} component={BlogDetail} />
+            <Route path={"/create"}><CreateBlog/></Route>
 
           </Switch>
         </div>
