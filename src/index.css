@@ -58,17 +58,17 @@ h2.comment-heading {
   color: #f1356d;
   margin-bottom: 32px;
 }
-.comment-preview{
+.comment-preview, .blog-preview{
   padding: 20px 15px;
   margin: 40px 0;
 }
-.comment-preview:hover{
+.comment-preview:hover, .blog-preview:hover{
   background-color: #242424;
 }
-.comment-preview h2{
+.comment-preview h2, .blog-preview h2{
   color: #f1356d;
 }
-.comment-preview p{
+.comment-preview p, .blog-preview p{
   color: #fff;
   margin: 10px 0;
 }
