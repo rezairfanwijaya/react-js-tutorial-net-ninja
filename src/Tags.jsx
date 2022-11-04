@@ -5,6 +5,7 @@ const Tags = () => {
         <div className="tag">
             <Link to="/commentar" className="commentar">Commentar</Link>
             <Link to="/user" className="user">Users</Link>
+            <Link to="/blogs" className="user">Blogs</Link>
         </div>
      );
 }
