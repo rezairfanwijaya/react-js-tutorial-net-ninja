@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
 const GetData = (url) => {
-    const [Data, setData] = useState(null);
-    const [ErrorMessage, setErrorMessage] = useState(null);
+    const [Data, setData] = useState([]);
+    const [ErrorMessage, setErrorMessage] = useState('');
     const [IsLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
