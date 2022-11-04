@@ -12,7 +12,7 @@ const BlogDetail = (props) => {
             {Data && <div className="blog-preview" key={Data.id}>
                 <h2 className="blog-heading" style={{ textAlign: "center" }}>{Data.title}</h2>
                 <p>by : {Data.author}</p>
-                <p>{Data.body}</p>
+                <p>{Data.content}</p>
             </div>}
         </div>
     </>);
